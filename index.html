@@ -87,6 +87,14 @@
   .social-btn:hover{border-color:var(--blue);color:var(--blue);}
   .social-btn svg{width:18px;height:18px;}
 
+  .cv-btn{
+    display:inline-flex;align-items:center;gap:9px;
+    background:var(--grad);color:#fff;font-size:0.9rem;font-weight:700;
+    padding:0 22px;height:42px;border-radius:22px;transition:opacity .15s,transform .15s;
+  }
+  .cv-btn:hover{opacity:0.88;transform:translateY(-1px);}
+  .cv-btn svg{width:16px;height:16px;}
+
   .hero-photo{
     position:relative;aspect-ratio:1/1;border-radius:50%;
     background:var(--card);border:1px solid var(--card-border);
@@ -319,11 +327,15 @@
         <a class="social-btn" href="mailto:mharzallah99@gmail.com" aria-label="Email">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
         </a>
+        <a class="cv-btn" href="CV_Mourad_Harzallah_Chef_De_Projet.pdf" download aria-label="Download CV">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+          Download CV
+        </a>
       </div>
     </div>
 
     <div class="hero-photo">
-      <img src="IMG.jpg" alt="Mourad Harzallah" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+      <img src="IMG.jpg" alt="Mourad Harzallah" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%;border-radius:50%;">
     </div>
   </div>
 </section>
