@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>From Civil Engineering to Project Management: An Unconventional Path — Mourad Harzallah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B0E17;--bg-soft:#10141F;--card:#131826;--card-border:#212840;
+    --ink:#F2F4F8;--muted:#9AA3B5;--blue:#4C7CF3;--blue-soft:#2E3B63;
+    --grad:linear-gradient(90deg,#4C7CF3,#8E6CF0,#4C7CF3);--max:760px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.7;}
+  a{color:var(--blue);text-decoration:none;}
+  body::before{content:'';position:fixed;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,#0EA5A5,#4C7CF3,#7C6CF0);}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 28px;}
+  header{padding:26px 0;border-bottom:1px solid var(--card-border);margin-bottom:56px;}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;max-width:1120px;}
+  .back{font-size:0.85rem;color:var(--muted);display:flex;align-items:center;gap:6px;}
+  .back:hover{color:var(--blue);}
+  .mark{font-weight:800;font-size:1.1rem;color:var(--ink);}
+  main{padding-bottom:100px;}
+  .meta{font-family:'IBM Plex Mono',monospace;font-size:0.8rem;color:var(--blue);margin-bottom:18px;}
+  h1{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:800;letter-spacing:-0.02em;line-height:1.15;margin-bottom:26px;}
+  h2{font-size:1.35rem;font-weight:700;margin:40px 0 16px;}
+  p{color:var(--muted);font-size:1.02rem;margin-bottom:18px;}
+  p strong{color:var(--ink);}
+  ul{margin:0 0 20px 20px;color:var(--muted);}
+  li{margin-bottom:8px;}
+  .tags{display:flex;gap:8px;margin:24px 0 40px;}
+  .tags span{font-size:0.75rem;padding:5px 12px;border-radius:14px;background:var(--blue-soft);color:#B9C7F5;}
+  .pull{border-left:3px solid var(--blue);padding-left:20px;margin:32px 0;font-style:italic;color:var(--ink);font-size:1.08rem;}
+  footer{padding:36px 0;text-align:center;border-top:1px solid var(--card-border);}
+  footer p{font-size:0.8rem;color:var(--muted);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="mark">MH</span>
+    <a class="back" href="../index.html">← Back to portfolio</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="meta">June 2024 · 4 min read</div>
+    <h1>From Civil Engineering to Project Management: An Unconventional Path</h1>
+    <div class="tags"><span>Career</span><span>Transition</span><span>Skills</span></div>
+
+    <p>I started my studies in Civil Engineering in Tunisia, coordinating construction sites and reading technical drawings — not managing budgets and stakeholder communication. On paper, the jump to a Master's in Project Management & Commercial Engineering, and roles at Euronext and Carrefour, looks like a pivot. In practice, it was closer to a translation of the same underlying skills into a different vocabulary.</p>
+
+    <h2>What civil engineering actually teaches you</h2>
+    <p>A civil engineering degree isn't really about concrete and load calculations — it's about <strong>modeling complex systems and finding the constraint that actually matters</strong>. On a construction site, coordinating multiple teams and planning work progress means anticipating dependencies before they cause delay: the same skill a PMO analyst uses when reading a project roadmap.</p>
+
+    <h2>Site coordination and PMO are more alike than they look</h2>
+    <p>As Assistant Project Manager on a construction site, my job was to monitor compliance with deadlines, quality, and technical requirements, manage procurement, and lead progress meetings. Strip away the hard hat and the vocabulary, and that is nearly a word-for-word description of PMO work: tracking status, catching drift early, and keeping stakeholders aligned.</p>
+
+    <div class="pull">"Engineering doesn't teach you to avoid problems — it teaches you to model them well enough to see them coming."</div>
+
+    <h2>Pricing tenders sharpened a different, complementary skill</h2>
+    <p>My time as a Pricing Analyst at NORTEC Engineering — estimating budgets for tenders up to €22M — added a layer that pure coordination doesn't: financial rigor. Reading a technical file and translating it into a defensible number is a discipline that made me far more comfortable with the budget-tracking side of PMO work later on.</p>
+
+    <h2>Why the combination is an asset, not a detour</h2>
+    <p>Recruiters sometimes see a civil engineering background paired with a management master's as an unusual combination. I'd argue it's the opposite: it means I can read a technical constraint the way an engineer does, and communicate it the way a project manager needs to — a genuinely useful bridge in retail, finance, or any sector where technical and business teams have to work from the same plan.</p>
+
+    <h2>The throughline</h2>
+    <p>Every role since — Euronext, Carrefour, Simulio — has reused the same underlying instinct: model the system, find the real constraint, and keep everyone moving toward the same delivery date. The tools changed. The way of thinking didn't.</p>
+  </div>
+</main>
+
+<footer><p>© 2026 Mourad Harzallah. All rights reserved.</p></footer>
+</body>
+</html>
