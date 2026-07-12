@@ -15,11 +15,26 @@
             flex-direction: column;
             align-items: center;
         }
-        .header { text-align: center; margin-bottom: 40px; }
+        .header { text-align: center; margin-bottom: 20px; }
         h1 { color: #0f172a; margin-bottom: 5px; }
         h2 { color: #3b82f6; font-weight: 400; margin-top: 0; }
         .intro { max-width: 700px; text-align: center; line-height: 1.6; color: #475569; margin-bottom: 40px; }
         
+        /* Style du bouton de téléchargement CV */
+        .btn-cv {
+            display: inline-block;
+            background-color: #1e3a8a;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .btn-cv:hover { background-color: #2563eb; }
+
         .project-card {
             background: white;
             border-radius: 8px;
@@ -46,6 +61,9 @@
     
     <div class="intro">
         <p>Alliant rigueur opérationnelle et vision stratégique, j'accompagne la transformation digitale et l'optimisation des processus métier. Double expertise en pilotage de portefeuille de projets (secteur financier) et coordination d'équipes opérationnelles.</p>
+        
+        <!-- Le bouton de téléchargement est ici -->
+        <a href="CV_Mourad_Harzallah_Chef_De_Projet.pdf" class="btn-cv" target="_blank">📄 Télécharger mon CV</a>
     </div>
 
     <!-- PROJET 1 : CARREFOUR -->
