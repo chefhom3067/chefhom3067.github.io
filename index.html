@@ -1,71 +1,94 @@
-<!DOCTYPE html>
-<html lang="fr" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mourad Harzallah | Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #0a0e17; color: #f8fafc; }
-        .glass-card { background-color: rgba(19, 26, 41, 0.8); backdrop-filter: blur(8px); border: 1px solid rgba(30, 41, 59, 0.5); border-radius: 0.75rem; }
-    </style>
-</head>
-<body>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
-        <div class="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold">MH</a>
-            <div class="flex gap-6 text-sm text-muted-foreground">
-                <a href="#about" class="hover:text-primary">ABOUT</a>
-                <a href="#experience" class="hover:text-primary">EXPERIENCE</a>
-                <a href="#skills" class="hover:text-primary">SKILLS</a>
-                <a href="#contact" class="hover:text-primary">CONTACT</a>
-            </div>
-        </div>
-    </nav>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-    <main class="pt-24 px-6 max-w-5xl mx-auto">
-        <!-- Hero -->
-        <section class="py-20 text-center">
-            <h1 class="text-6xl font-bold mb-4">Mourad <span class="text-blue-500">Harzallah</span></h1>
-            <p class="text-xl text-gray-400">Junior Project Manager | PMO & Operational Management</p>
-        </section>
+@layer base {
+  :root {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 6%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 14%;
+    --muted-foreground: 215 20% 55%;
+    --accent: 24 95% 53%;
+    --accent-foreground: 222 47% 6%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 217 91% 60%;
+    --radius: 0.75rem;
+    --sidebar-background: 222 47% 5%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 222 47% 6%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 17%;
+    --sidebar-ring: 217 91% 60%;
+  }
 
-        <!-- About -->
-        <section id="about" class="py-20">
-            <h2 class="text-3xl font-bold mb-12 text-center">About Me</h2>
-            <div class="glass-card p-8 text-gray-300 text-center leading-relaxed">
-                Expert in Project Management (PMO) and Business Development. Certified in Scrum, I transform complex ideas into tangible results.
-            </div>
-        </section>
+  * {
+    @apply border-border;
+  }
 
-        <!-- Experience -->
-        <section id="experience" class="py-20">
-            <h2 class="text-3xl font-bold mb-12 text-center">Experience</h2>
-            <div class="space-y-6">
-                <div class="glass-card p-6">
-                    <h3 class="font-semibold text-lg">Operational Coordinator – Carrefour City</h3>
-                    <p class="text-blue-500 text-sm">2024 – 2026</p>
-                </div>
-                <div class="glass-card p-6">
-                    <h3 class="font-semibold text-lg">PMO Analyst – Euronext</h3>
-                    <p class="text-blue-500 text-sm">2024</p>
-                </div>
-            </div>
-        </section>
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
 
-        <!-- Contact -->
-        <section id="contact" class="py-20 text-center">
-            <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
-            <a href="mailto:mharzallah99@gmail.com" class="bg-blue-600 px-8 py-3 rounded-full font-bold hover:bg-blue-700 transition">Contact Me</a>
-        </section>
-    </main>
+  h1 {
+    @apply text-4xl font-bold leading-tight tracking-tight;
+  }
 
-    <footer class="py-8 text-center text-gray-500 text-sm border-t border-gray-800">
-        <p>© 2026 Mourad Harzallah. All rights reserved.</p>
-    </footer>
+  h2 {
+    @apply text-2xl font-semibold leading-snug;
+  }
 
-</body>
-</html>
+  h3 {
+    @apply text-xl font-semibold;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+
+  .section-padding {
+    @apply py-20 px-4 sm:px-6 lg:px-8;
+  }
+
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-sm border border-border/50 rounded-xl;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(222 47% 6%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(217 33% 25%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(217 33% 35%);
+}
